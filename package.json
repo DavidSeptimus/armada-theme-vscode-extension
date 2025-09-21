@@ -1,0 +1,21 @@
+{
+  "name": "armada-theme",
+  "displayName": "Armada Theme",
+  "description": "A color theme that aims to faithfully replicate JetBrains Fleet's dark color theme.",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.104.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Armada",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Armada-color-theme.json"
+      }
+    ]
+  }
+}
