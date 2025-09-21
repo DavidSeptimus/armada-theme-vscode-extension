@@ -2,7 +2,7 @@
   "name": "armada-theme",
   "displayName": "Armada Theme",
   "description": "A color theme that aims to faithfully replicate JetBrains Fleet's dark color theme.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "engines": {
     "vscode": "^1.104.0"
   },
