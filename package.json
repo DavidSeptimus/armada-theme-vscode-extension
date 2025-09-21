@@ -9,6 +9,10 @@
   "categories": [
     "Themes"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DavidSeptimus/armada-theme-vscode-extension.git"
+  },
   "license": "MIT",
   "contributes": {
     "themes": [
