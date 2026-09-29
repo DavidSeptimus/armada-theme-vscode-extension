@@ -1264,6 +1264,13 @@
 			}
 		},
 		{
+			"name": "Mermaid operators (semantic operator tokens and TextMate transitions)",
+			"scope": "keyword.operator.mermaid,keyword.control.transition.mermaid",
+			"settings": {
+				"foreground": "#A8CC7C"
+			}
+		},
+		{
 			"scope": "support.constant.color.w3c-standard-color-name.css,support.constant.color.w3c-standard-color-name.scss",
 			"settings": {
 				"foreground": "#EBC88D"
