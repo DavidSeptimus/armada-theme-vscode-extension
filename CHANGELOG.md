@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## 2.0.1 - 2026-11-19
+
+### Fixed
+
+- The active tab no longer has a line above it in the classic layout, as seen in VSCodium and in VS Code with the modern UI turned off
+
 ## 2.0.0 - 2026-11-19
 
 ### Changed
