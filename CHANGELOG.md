@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+## 2.1.0 - 2026-11-19
+
+### Changed
+
+- Semantic highlighting is on: languages whose extension reports semantic tokens are colored from them, with type parameters light blue and decorators green
+
+### Added
+
+- Kotlin highlighting that follows Armada for JetBrains IDEs, using the semantic tokens of [Java and Kotlin by IntelliJ IDEA](https://marketplace.visualstudio.com/items?itemName=JetBrains.intellij-server): green annotations, bold function declarations, violet properties, italic top-level properties and enum entries, and light blue type parameters and named arguments
+- Java highlighting that follows Armada for JetBrains IDEs: blue type names, violet fields and enum constants, upright parameters, plain package names, teal `this`, and green annotation attribute names
+- Colors for the Kotlin grammars of other extensions: green annotations, bold function declarations, and teal `this` and string template markers
+
 ## 2.0.1 - 2026-11-19
 
 ### Fixed

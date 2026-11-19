@@ -771,10 +771,11 @@
 		},
 		{
 			"scope": [
+				"storage.type.java",
 				"storage.type.generic.java"
 			],
 			"settings": {
-				"foreground": "#82D2CE"
+				"foreground": "#87C3FF"
 			}
 		},
 		{
@@ -786,8 +787,7 @@
 		{
 			"scope": [
 				"keyword.operator.instanceof.java",
-				"storage.type.primitive.java",
-				"storage.type.java"
+				"storage.type.primitive.java"
 			],
 			"settings": {
 				"foreground": "#82D2CE"
@@ -797,6 +797,124 @@
 			"scope": "meta.definition.variable.name.java",
 			"settings": {
 				"foreground": "#E0E1E4"
+			}
+		},
+		{
+			"name": "Java fields and enum constants",
+			"scope": [
+				"variable.other.object.property.java",
+				"constant.other.enum.java"
+			],
+			"settings": {
+				"foreground": "#AF9CFF"
+			}
+		},
+		{
+			"name": "Java field declarations",
+			"scope": "meta.class.body.java meta.definition.variable.java variable.other.definition.java",
+			"settings": {
+				"foreground": "#AF9CFF"
+			}
+		},
+		{
+			"name": "Java local variable declarations",
+			"scope": "meta.class.body.java meta.method.body.java meta.definition.variable.java variable.other.definition.java",
+			"settings": {
+				"foreground": "#E0E1E4"
+			}
+		},
+		{
+			"name": "Java annotation attribute names",
+			"scope": "constant.other.key.java",
+			"settings": {
+				"foreground": "#A8CC7C"
+			}
+		},
+		{
+			"name": "Java this and super",
+			"scope": [
+				"variable.language.this.java",
+				"variable.language.java"
+			],
+			"settings": {
+				"foreground": "#82D2CE"
+			}
+		},
+		{
+			"name": "Java package names and ternary operators",
+			"scope": [
+				"storage.modifier.package.java",
+				"keyword.control.ternary.java"
+			],
+			"settings": {
+				"foreground": "#E0E1E4"
+			}
+		},
+		{
+			"name": "Java parameters",
+			"scope": "variable.parameter.java",
+			"settings": {
+				"fontStyle": ""
+			}
+		},
+		{
+			"name": "Kotlin annotations",
+			"scope": [
+				"entity.name.type.annotation.kotlin",
+				"entity.name.type.annotation-site.kotlin",
+				"meta.annotation.kotlin",
+				"entity.name.function.annotation.kotlin"
+			],
+			"settings": {
+				"foreground": "#A8CC7C"
+			}
+		},
+		{
+			"name": "Kotlin function declarations",
+			"scope": [
+				"entity.name.function.declaration.kotlin",
+				"entity.name.function.kotlin"
+			],
+			"settings": {
+				"foreground": "#E0E1E4",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "Kotlin this and string template markers",
+			"scope": [
+				"variable.language.this.kotlin",
+				"source.kotlin punctuation.definition.template-expression.begin",
+				"source.kotlin punctuation.definition.template-expression.end"
+			],
+			"settings": {
+				"foreground": "#82D2CE"
+			}
+		},
+		{
+			"name": "Kotlin constants and enum entries",
+			"scope": "variable.other.constant.kotlin",
+			"settings": {
+				"foreground": "#AF9CFF",
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "Kotlin type parameters and named arguments",
+			"scope": [
+				"entity.name.type.parameter.kotlin",
+				"variable.parameter.named.kotlin"
+			],
+			"settings": {
+				"foreground": "#ADD1DE",
+				"fontStyle": ""
+			}
+		},
+		{
+			"name": "Kotlin built-in types",
+			"scope": "support.type.kotlin",
+			"settings": {
+				"foreground": "#87C3FF"
 			}
 		},
 		{
@@ -2666,5 +2784,62 @@
 				"foreground": "#909194"
 			}
 		}
-	]
+	],
+	"semanticHighlighting": true,
+	"semanticTokenColors": {
+		"typeParameter": "#ADD1DE",
+		"decorator": "#A8CC7C",
+		"variable.readonly": "#E0E1E4",
+		"namespace:java": "#E0E1E4",
+		"property:java": "#AF9CFF",
+		"parameter:java": {
+			"foreground": "#E0E1E4",
+			"italic": false
+		},
+		"namespace:kotlin": "#E0E1E4",
+		"class:kotlin": "#87C3FF",
+		"struct:kotlin": "#87C3FF",
+		"enum:kotlin": "#87C3FF",
+		"interface:kotlin": "#87C3FF",
+		"type:kotlin": "#87C3FF",
+		"typeParameter:kotlin": "#ADD1DE",
+		"decorator:kotlin": "#A8CC7C",
+		"label:kotlin": "#E0E1E4",
+		"function:kotlin": "#EBC88D",
+		"method:kotlin": "#EBC88D",
+		"function.declaration:kotlin": {
+			"foreground": "#E0E1E4",
+			"bold": true
+		},
+		"method.declaration:kotlin": {
+			"foreground": "#E0E1E4",
+			"bold": true
+		},
+		"operator:kotlin": "#E0E1E4",
+		"operator.declaration:kotlin": {
+			"foreground": "#E0E1E4",
+			"bold": true
+		},
+		"variable:kotlin": "#E0E1E4",
+		"parameter:kotlin": {
+			"foreground": "#E0E1E4",
+			"italic": false
+		},
+		"parameter.namedArgument:kotlin": {
+			"foreground": "#ADD1DE",
+			"italic": false
+		},
+		"property:kotlin": "#AF9CFF",
+		"property.static:kotlin": {
+			"foreground": "#AF9CFF",
+			"italic": true
+		},
+		"enumMember:kotlin": {
+			"foreground": "#AF9CFF",
+			"italic": true
+		},
+		"*.deprecated:kotlin": {
+			"strikethrough": true
+		}
+	}
 }

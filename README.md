@@ -34,6 +34,15 @@ With VS Code's modern UI, set the editor tabs to pills to get tabs like the ones
 "workbench.experimental.modernUIEditorTabStyle": "pill"
 ```
 
+### Semantic highlighting
+
+Armada turns semantic highlighting on, so languages are colored from what their language server knows about the code. Java and Kotlin, with JetBrains' [Java and Kotlin by IntelliJ IDEA](https://marketplace.visualstudio.com/items?itemName=JetBrains.intellij-server), are colored to match Armada for JetBrains IDEs. To go back to grammar-only colors, for every language or one:
+
+```json
+"editor.semanticHighlighting.enabled": false,
+"[typescript]": { "editor.semanticHighlighting.enabled": false }
+```
+
 ### Optional custom CSS
 
 VS Code's theme colors can't express two parts of the Islands look, so [custom.css](./custom.css) adds them for anyone who already uses an extension that loads custom CSS into VS Code, such as [Custom CSS and JS Loader](https://marketplace.visualstudio.com/items?itemName=be5invis.vscode-custom-css). It applies only while Armada is the active theme.

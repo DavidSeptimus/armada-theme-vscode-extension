@@ -11,7 +11,11 @@ const source = resolve(
   process.argv[2] ??
     resolve(root, "../tachi-code/src/entrypoints/code/shiki/themes/armada.ts"),
 );
-const { default: theme, vscodeOverrides } = await import(
+const {
+  default: theme,
+  vscodeOverrides,
+  vscodeSemanticTokenColors,
+} = await import(
   pathToFileURL(source).href
 );
 
@@ -32,6 +36,8 @@ const output = {
   type: theme.type,
   colors,
   tokenColors: theme.tokenColors,
+  semanticHighlighting: true,
+  semanticTokenColors: vscodeSemanticTokenColors,
 };
 
 const target = resolve(root, "themes/Armada-color-theme.json");
