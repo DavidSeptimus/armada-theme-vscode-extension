@@ -811,14 +811,24 @@
 		},
 		{
 			"name": "Java field declarations",
-			"scope": "meta.class.body.java meta.definition.variable.java variable.other.definition.java",
+			"scope": [
+				"meta.class.body.java meta.definition.variable.java variable.other.definition.java",
+				"meta.enum.java meta.definition.variable.java variable.other.definition.java",
+				"meta.record.body.java meta.definition.variable.java variable.other.definition.java",
+				"meta.method.body.java meta.inner-class.java meta.definition.variable.java variable.other.definition.java"
+			],
 			"settings": {
 				"foreground": "#AF9CFF"
 			}
 		},
 		{
 			"name": "Java local variable declarations",
-			"scope": "meta.class.body.java meta.method.body.java meta.definition.variable.java variable.other.definition.java",
+			"scope": [
+				"meta.class.body.java meta.method.body.java meta.definition.variable.java variable.other.definition.java",
+				"meta.enum.java meta.method.body.java meta.definition.variable.java variable.other.definition.java",
+				"meta.record.body.java meta.method.body.java meta.definition.variable.java variable.other.definition.java",
+				"meta.method.body.java meta.inner-class.java meta.method.body.java meta.definition.variable.java variable.other.definition.java"
+			],
 			"settings": {
 				"foreground": "#E0E1E4"
 			}

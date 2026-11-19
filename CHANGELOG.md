@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+### Fixed
+
+- Java fields declared in enums, records, and anonymous classes are violet like other fields when no language server is running
+
 ## 2.1.0 - 2026-11-19
 
 ### Changed
