@@ -2793,6 +2793,263 @@
 			"settings": {
 				"foreground": "#909194"
 			}
+		},
+		{
+			"name": "CSS selector punctuation and combinators",
+			"scope": [
+				"meta.selector.css"
+			],
+			"settings": {
+				"foreground": "#E0E1E4"
+			}
+		},
+		{
+			"name": "CSS at-rules and !important",
+			"scope": [
+				"keyword.control.at-rule",
+				"keyword.control.at-rule punctuation.definition.keyword",
+				"punctuation.definition.keyword.css",
+				"keyword.other.important.css",
+				"keyword.other.important.scss"
+			],
+			"settings": {
+				"foreground": "#A8CC7C"
+			}
+		},
+		{
+			"name": "CSS selectors",
+			"scope": [
+				"entity.name.tag.css",
+				"entity.name.tag.custom.css",
+				"entity.name.tag.nesting.css",
+				"entity.name.tag.wildcard.css",
+				"entity.name.tag.wildcard.scss",
+				"entity.other.attribute-name.class.css",
+				"entity.other.attribute-name.id.css",
+				"entity.other.attribute-name.pseudo-class.css",
+				"entity.other.attribute-name.pseudo-element.css",
+				"entity.other.attribute-name.css",
+				"punctuation.definition.entity.css",
+				"entity.other.keyframe-offset.css",
+				"entity.other.namespace-prefix.css",
+				"entity.name.function.namespace-prefix.css",
+				"storage.modifier.ignore-case.css",
+				"meta.attribute-selector.css string",
+				"meta.attribute-selector.css punctuation.definition.string.begin.css",
+				"meta.attribute-selector.css punctuation.definition.string.end.css",
+				"meta.selector.css punctuation.separator.css"
+			],
+			"settings": {
+				"foreground": "#AF9CFF"
+			}
+		},
+		{
+			"name": "CSS media queries and keyframe names",
+			"scope": [
+				"support.constant.media.css",
+				"support.type.property-name.media.css",
+				"keyword.operator.logical.and.media.css",
+				"keyword.operator.logical.not.media.css",
+				"keyword.operator.logical.only.media.css",
+				"keyword.operator.logical.feature.and.css",
+				"keyword.operator.logical.feature.not.css",
+				"keyword.operator.logical.feature.or.css",
+				"variable.parameter.keyframe-list.css",
+				"variable.parameter.container-name.css"
+			],
+			"settings": {
+				"foreground": "#AF9CFF",
+				"fontStyle": ""
+			}
+		},
+		{
+			"name": "CSS functions",
+			"scope": [
+				"source.css support.function",
+				"meta.property-value.css meta.function-call.css entity.name.function.css"
+			],
+			"settings": {
+				"foreground": "#AF9CFF"
+			}
+		},
+		{
+			"name": "CSS property names",
+			"scope": [
+				"support.type.property-name.css",
+				"support.type.vendored.property-name.css",
+				"meta.property-name.css",
+				"variable.css"
+			],
+			"settings": {
+				"foreground": "#82D2CE"
+			}
+		},
+		{
+			"name": "CSS property values",
+			"scope": [
+				"meta.property-value.css",
+				"support.constant.property-value.css",
+				"support.constant.color.w3c-standard-color-name.css",
+				"support.constant.color.current.css",
+				"support.constant.font-name.css",
+				"support.constant.vendored.property-value.css",
+				"variable.argument.css",
+				"keyword.operator.gradient.css",
+				"meta.at-rule.media.header.css meta.property-value",
+				"source.css meta.feature-query support.constant"
+			],
+			"settings": {
+				"foreground": "#E394DC"
+			}
+		},
+		{
+			"name": "CSS numbers, units and colors",
+			"scope": [
+				"source.css constant.numeric",
+				"source.css keyword.other.unit",
+				"constant.other.color.rgb-value.hex.css",
+				"constant.other.color.rgb-value.hex.css punctuation.definition.constant.css",
+				"constant.other.unicode-range.css",
+				"entity.other.keyframe-offset.percentage.css"
+			],
+			"settings": {
+				"foreground": "#EBC88D"
+			}
+		},
+		{
+			"name": "CSS punctuation inside values",
+			"scope": [
+				"meta.property-value.css punctuation",
+				"meta.property-value.css keyword.operator",
+				"meta.property-list.css punctuation.separator.key-value.css",
+				"meta.property-list.css punctuation.terminator.rule.css"
+			],
+			"settings": {
+				"foreground": "#E0E1E4"
+			}
+		},
+		{
+			"name": "CSS URLs",
+			"scope": [
+				"variable.parameter.url.css",
+				"meta.function.url.css string",
+				"meta.at-rule.import.css string",
+				"meta.function.url.css punctuation.definition.string.begin.css",
+				"meta.function.url.css punctuation.definition.string.end.css"
+			],
+			"settings": {
+				"foreground": "#ADD1DF",
+				"fontStyle": "underline"
+			}
+		},
+		{
+			"name": "CSS layer names and unrecognized media features",
+			"scope": [
+				"variable.parameter.layer-name.css",
+				"meta.at-rule.media.header.css"
+			],
+			"settings": {
+				"foreground": "#AF9CFF"
+			}
+		},
+		{
+			"name": "CSS media query punctuation",
+			"scope": [
+				"meta.at-rule.media.header.css punctuation"
+			],
+			"settings": {
+				"foreground": "#E0E1E4"
+			}
+		},
+		{
+			"name": "SCSS variables",
+			"scope": [
+				"variable.scss",
+				"meta.property-list.scss meta.property-value.scss variable.scss",
+				"meta.property-list.scss variable.interpolation.scss variable.scss",
+				"meta.property-list.scss meta.at-rule.at-root.scss variable.scss",
+				"meta.property-list.scss meta.at-rule.charset.scss variable.scss",
+				"meta.property-list.scss meta.at-rule.each.scss variable.scss",
+				"meta.property-list.scss meta.at-rule.else.scss variable.scss",
+				"meta.property-list.scss meta.at-rule.extend.scss variable.scss",
+				"meta.property-list.scss meta.at-rule.fontface.scss variable.scss",
+				"meta.property-list.scss meta.at-rule.for.scss variable.scss",
+				"meta.property-list.scss meta.at-rule.forward.scss variable.scss",
+				"meta.property-list.scss meta.at-rule.function.scss variable.scss",
+				"meta.property-list.scss meta.at-rule.if.scss variable.scss",
+				"meta.property-list.scss meta.at-rule.import.scss variable.scss",
+				"meta.property-list.scss meta.at-rule.include.scss variable.scss",
+				"meta.property-list.scss meta.at-rule.keyframes.scss variable.scss",
+				"meta.property-list.scss meta.at-rule.media.scss variable.scss",
+				"meta.property-list.scss meta.at-rule.mixin.scss variable.scss",
+				"meta.property-list.scss meta.at-rule.namespace.scss variable.scss",
+				"meta.property-list.scss meta.at-rule.option.scss variable.scss",
+				"meta.property-list.scss meta.at-rule.page.scss variable.scss",
+				"meta.property-list.scss meta.at-rule.return.scss variable.scss",
+				"meta.property-list.scss meta.at-rule.supports.scss variable.scss",
+				"meta.property-list.scss meta.at-rule.use.scss variable.scss",
+				"meta.property-list.scss meta.at-rule.warn.scss variable.scss",
+				"meta.property-list.scss meta.at-rule.while.scss variable.scss",
+				"meta.property-list.scss meta.property-value.media-query.scss variable.scss"
+			],
+			"settings": {
+				"foreground": "#87C3FF"
+			}
+		},
+		{
+			"name": "SCSS names directly in a rule body",
+			"scope": [
+				"meta.property-list variable.scss"
+			],
+			"settings": {
+				"foreground": "#AF9CFF"
+			}
+		},
+		{
+			"name": "SCSS control keywords and flags",
+			"scope": [
+				"source.css.scss keyword.control",
+				"source.css.scss punctuation.definition.keyword",
+				"keyword.other.default.scss",
+				"keyword.other.global.scss"
+			],
+			"settings": {
+				"foreground": "#A8CC7C"
+			}
+		},
+		{
+			"name": "SCSS mixin, function and keyframe names, parent selector",
+			"scope": [
+				"entity.name.function.scss",
+				"entity.name.tag.reference.scss",
+				"keyword.operator.logical.scss",
+				"meta.attribute-selector.scss",
+				"string.quoted.double.attribute-value.scss",
+				"string.quoted.single.attribute-value.scss",
+				"string.quoted.double.attribute-value.scss punctuation",
+				"string.quoted.single.attribute-value.scss punctuation"
+			],
+			"settings": {
+				"foreground": "#AF9CFF"
+			}
+		},
+		{
+			"name": "SCSS attribute selector brackets",
+			"scope": [
+				"meta.attribute-selector.scss punctuation.definition.attribute-selector"
+			],
+			"settings": {
+				"foreground": "#E0E1E4"
+			}
+		},
+		{
+			"name": "SCSS map keys",
+			"scope": [
+				"support.type.map.key.scss"
+			],
+			"settings": {
+				"foreground": "#82D2CE"
+			}
 		}
 	],
 	"semanticHighlighting": true,

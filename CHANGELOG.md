@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+### Changed
+
+- CSS highlighting that follows Armada for JetBrains IDEs: violet selectors, teal property names, pink values, green at-rules and `!important`, violet functions, yellow units and hex colors, and underlined URLs
+- SCSS follows the same colors, with blue variables, green control rules such as `@if` and `@each`, and violet mixin, function, and placeholder names
+- Less at-rules are green and its built-in functions violet, matching CSS
+
 ### Fixed
 
 - Java fields declared in enums, records, and anonymous classes are violet like other fields when no language server is running
