@@ -1,8 +1,8 @@
 {
   "name": "armada-theme",
   "displayName": "Armada Theme",
-  "description": "A color theme that aims to faithfully replicate JetBrains Fleet's dark color theme.",
-  "version": "1.0.1",
+  "description": "A dark color theme inspired by the dark themes of JetBrains Fleet and Air, optimized for VS Code's modern UI.",
+  "version": "2.0.0",
   "engines": {
     "vscode": "^1.104.0"
   },
@@ -34,6 +34,9 @@
     "dark theme",
     "jetbrains",
     "fleet",
-    "armada"
+    "armada",
+    "air",
+    "islands",
+    "modern ui"
   ]
 }

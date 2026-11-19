@@ -5,3 +5,6 @@ vsc-extension-quickstart.md
 scripts/**
 .idea/**
 *.vsix
+images/**
+!images/icon.png
+.DS_Store

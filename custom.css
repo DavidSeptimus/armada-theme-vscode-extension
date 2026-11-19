@@ -1,0 +1,84 @@
+/* Armada: outline the active editor tab */
+.DavidSeptimus-armada-theme-themes-Armada-color-theme-json.modern-ui-tabs
+.part.editor .tabs-container > .tab.active > .tab-fill {
+    border-color: #0870e480;
+}
+
+/* The active tab of an editor group that doesn't have focus */
+.DavidSeptimus-armada-theme-themes-Armada-color-theme-json.modern-ui-tabs
+.part.editor .editor-group-container:not(.active) .tabs-container > .tab.active > .tab-fill {
+    border-color: #3e4147;
+    background-color: #252629 !important;
+}
+
+/* Armada: outline the selected tab of the panel and side bars */
+.DavidSeptimus-armada-theme-themes-Armada-color-theme-json.modern-ui-tabs
+.pane-composite-part > :is(.title, .header-or-footer) > .composite-bar-container
+> .composite-bar > .monaco-action-bar .action-item:not(.icon).checked > .active-item-indicator {
+    box-shadow: inset 0 0 0 1px #3e4147;
+    background-color: #252629 !important;
+}
+
+/* The same tab while its panel or side bar has focus */
+.DavidSeptimus-armada-theme-themes-Armada-color-theme-json.modern-ui-tabs
+.pane-composite-part:focus-within > :is(.title, .header-or-footer) > .composite-bar-container
+> .composite-bar > .monaco-action-bar .action-item:not(.icon).checked > .active-item-indicator {
+    box-shadow: inset 0 0 0 1px #0870e480;
+    background-color: #0870e440 !important;
+}
+
+/* Armada: outline the selected scope tab of the Settings editor */
+.DavidSeptimus-armada-theme-themes-Armada-color-theme-json.modern-ui-tabs
+.settings-editor .settings-tabs-widget > .monaco-action-bar .action-item .action-label.checked {
+    box-shadow: inset 0 0 0 1px #0870e480;
+}
+
+/* Armada: outline the selected tab of the chat model picker */
+.DavidSeptimus-armada-theme-themes-Armada-color-theme-json
+.action-widget .chat-model-picker-tabbar .monaco-custom-radio .monaco-button.active,
+.DavidSeptimus-armada-theme-themes-Armada-color-theme-json
+.action-widget.search-mode .chat-model-picker-tabbar .tabbed-action-list-tabbar-action.checked {
+    box-shadow: inset 0 0 0 1px #0870e480;
+}
+
+/* Armada: the selected choice of a chat question, as IntelliJ's AI Assistant draws it */
+.DavidSeptimus-armada-theme-themes-Armada-color-theme-json .interactive-session
+.chat-question-carousel-container .chat-question-input-container
+.chat-question-list .chat-question-list-item.selected,
+.DavidSeptimus-armada-theme-themes-Armada-color-theme-json .interactive-session
+.chat-question-carousel-container .chat-question-input-container
+.chat-question-list:not(:focus) .chat-question-list-item.selected:hover {
+    background-color: #18263c;
+    box-shadow: inset 0 0 0 1px #225090;
+}
+
+/* The same choice while the list has keyboard focus */
+.DavidSeptimus-armada-theme-themes-Armada-color-theme-json .interactive-session
+.chat-question-carousel-container .chat-question-input-container
+.chat-question-list:focus .chat-question-list-item.selected {
+    background-color: #18263c;
+    box-shadow: inset 0 0 0 1px #2a7deb;
+}
+
+/* Its number */
+.DavidSeptimus-armada-theme-themes-Armada-color-theme-json .interactive-session
+.chat-question-carousel-container .chat-question-input-container
+.chat-question-list .chat-question-list-item.selected .chat-question-list-number,
+.DavidSeptimus-armada-theme-themes-Armada-color-theme-json .interactive-session
+.chat-question-carousel-container .chat-question-input-container
+.chat-question-list:focus .chat-question-list-item.selected .chat-question-list-number {
+    color: #a8c6f4;
+}
+
+/* Armada: the activity bar sits on the shell, so the side bar beside it takes the rounded edge */
+.DavidSeptimus-armada-theme-themes-Armada-color-theme-json.monaco-workbench.floating-panels:not(.noactivitybar)
+.part.sidebar.left {
+    border-top-left-radius: var(--vscode-cornerRadius-large);
+    border-bottom-left-radius: var(--vscode-cornerRadius-large);
+}
+
+.DavidSeptimus-armada-theme-themes-Armada-color-theme-json.monaco-workbench.floating-panels:not(.noactivitybar)
+.part.sidebar.right {
+    border-top-right-radius: var(--vscode-cornerRadius-large);
+    border-bottom-right-radius: var(--vscode-cornerRadius-large);
+}
