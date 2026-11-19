@@ -6,6 +6,9 @@
   "engines": {
     "vscode": "^1.104.0"
   },
+  "scripts": {
+    "build:theme": "node --experimental-strip-types scripts/build-theme.mjs"
+  },
   "categories": [
     "Themes"
   ],
