@@ -11,6 +11,8 @@
 ### Fixed
 
 - Java fields declared in enums, records, and anonymous classes are violet like other fields when no language server is running
+- Terminal text printed in white or bright white is visible; both matched the terminal background before
+- The terminal's black is a dark gray, so programs that paint a black background no longer get a near-white block
 
 ## 2.1.0 - 2026-11-19
 
