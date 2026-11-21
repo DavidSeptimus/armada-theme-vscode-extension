@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## 2.2.0 - 2026-11-20
+
 ### Changed
 
 - CSS highlighting that follows Armada for JetBrains IDEs: violet selectors, teal property names, pink values, green at-rules and `!important`, violet functions, yellow units and hex colors, and underlined URLs
