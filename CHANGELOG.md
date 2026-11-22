@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+### Fixed
+
+- A folder that files are dragged onto is highlighted like a selected row; it had no highlight before
+
 ## 2.2.0 - 2026-11-20
 
 ### Changed
