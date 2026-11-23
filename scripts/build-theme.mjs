@@ -7,10 +7,12 @@ import { dirname, resolve } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
-const sources = resolve(
+const argument = resolve(
   process.argv[2] ??
     resolve(root, "../tachi-code/src/entrypoints/code/shiki/themes"),
 );
+// The path to armada.ts, which this script used to take, still works
+const sources = argument.endsWith(".ts") ? dirname(argument) : argument;
 
 const themes = [
   { source: "armada.ts", target: "themes/Armada-color-theme.json" },
