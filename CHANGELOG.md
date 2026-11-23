@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+### Added
+
+- Armada Light, a light theme colored after Armada Light for JetBrains IDEs, with the same workbench and language coverage as Armada
+
 ### Fixed
 
 - A folder that files are dragged onto is highlighted like a selected row; it had no highlight before
