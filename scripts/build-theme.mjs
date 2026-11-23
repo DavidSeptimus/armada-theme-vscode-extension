@@ -23,6 +23,9 @@ const themes = [
 const tachiOnly =
   /^(islands\.|islandTab\.|islandBanner\.|submenu\.|inputOption\.background$|statusBar\.hoverForeground$|tab\.inactiveBorder$)/;
 
+// Every theme is built before any file is written, so a failure leaves both
+// files as they were
+const outputs = [];
 for (const { source, target } of themes) {
   const {
     default: theme,
@@ -47,7 +50,10 @@ for (const { source, target } of themes) {
     semanticTokenColors: vscodeSemanticTokenColors,
   };
 
-  const path = resolve(root, target);
+  outputs.push({ path: resolve(root, target), output });
+}
+
+for (const { path, output } of outputs) {
   writeFileSync(path, JSON.stringify(output, null, "\t") + "\n");
-  console.log(`${Object.keys(colors).length} colors -> ${path}`);
+  console.log(`${Object.keys(output.colors).length} colors -> ${path}`);
 }
