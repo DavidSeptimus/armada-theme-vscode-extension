@@ -1,34 +1,70 @@
 ## Armada Theme for VS Code
 
-Armada is a dark theme inspired by the dark themes of JetBrains Fleet and Air, both now deprecated. It is optimized for VS Code's modern UI, which it colors after the Islands look of the [Armada theme for JetBrains IDEs](https://plugins.jetbrains.com/plugin/26844-armada-theme).
+The extension has two color themes, both optimized for VS Code's modern UI.
 
-Armada Light is its light counterpart, colored after Armada Light for JetBrains IDEs. Both themes come with the extension: pick **Armada Dark** or **Armada Light** with **Preferences: Color Theme**.
+- **Armada Dark** is inspired by the dark themes of JetBrains Fleet and Air, both now deprecated. It colors the workbench after the Islands look of the [Armada theme for JetBrains IDEs](https://plugins.jetbrains.com/plugin/26844-armada-theme).
+- **Armada Light** is its light counterpart, colored after Armada Light for JetBrains IDEs.
 
+### Picking a theme
+
+Run **Preferences: Color Theme** from the Command Palette and pick **Armada Dark** or **Armada Light**. In `settings.json` the dark theme is named `Armada`, as it was before the light theme existed:
+
+```json
+"workbench.colorTheme": "Armada"
+```
+
+```json
+"workbench.colorTheme": "Armada Light"
+```
+
+To follow the operating system's light and dark mode, use both:
+
+```json
+"window.autoDetectColorScheme": true,
+"workbench.preferredDarkColorTheme": "Armada",
+"workbench.preferredLightColorTheme": "Armada Light"
+```
 
 ### Screenshots
 
-The screenshots show Armada, the dark theme.
-
 With the theme alone, on VS Code's modern UI with pill tabs:
 
-![Explorer, a Python file and the terminal](./images/overview.png)
+![Armada Dark: Explorer, a Python file and the terminal](./images/overview.png)
+
+![Armada Light: Explorer, a Python file and the terminal](./images/overview-light.png)
 
 With the [optional custom CSS](#optional-custom-css), which rounds the side bar and outlines the selected tabs:
 
 <table>
   <tr>
-    <td><a href="https://github.com/DavidSeptimus/armada-theme-vscode-extension/raw/HEAD/images/split-editors.png"><img src="./images/split-editors.png" alt="Two editor groups beside Source Control"></a></td>
-    <td><a href="https://github.com/DavidSeptimus/armada-theme-vscode-extension/raw/HEAD/images/diff.png"><img src="./images/diff.png" alt="A diff of a modified file"></a></td>
+    <th>Armada Dark</th>
+    <th>Armada Light</th>
   </tr>
   <tr>
-    <td><a href="https://github.com/DavidSeptimus/armada-theme-vscode-extension/raw/HEAD/images/command-palette.png"><img src="./images/command-palette.png" alt="The Command Palette"></a></td>
-    <td><a href="https://github.com/DavidSeptimus/armada-theme-vscode-extension/raw/HEAD/images/settings.png"><img src="./images/settings.png" alt="The Settings editor"></a></td>
+    <td><a href="https://github.com/DavidSeptimus/armada-theme-vscode-extension/raw/HEAD/images/split-editors.png"><img src="./images/split-editors.png" alt="Two editor groups beside Source Control in Armada Dark"></a></td>
+    <td><a href="https://github.com/DavidSeptimus/armada-theme-vscode-extension/raw/HEAD/images/split-editors-light.png"><img src="./images/split-editors-light.png" alt="Two editor groups beside Source Control in Armada Light"></a></td>
   </tr>
   <tr>
-    <td><a href="https://github.com/DavidSeptimus/armada-theme-vscode-extension/raw/HEAD/images/git-history.png"><img src="./images/git-history.png" alt="The Source Control graph with branches and merges"></a></td>
-    <td><a href="https://github.com/DavidSeptimus/armada-theme-vscode-extension/raw/HEAD/images/chat.png"><img src="./images/chat.png" alt="An agent session in the Chat view"></a></td>
+    <td><a href="https://github.com/DavidSeptimus/armada-theme-vscode-extension/raw/HEAD/images/diff.png"><img src="./images/diff.png" alt="A diff of a modified file in Armada Dark"></a></td>
+    <td><a href="https://github.com/DavidSeptimus/armada-theme-vscode-extension/raw/HEAD/images/diff-light.png"><img src="./images/diff-light.png" alt="A diff of a modified file in Armada Light"></a></td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/DavidSeptimus/armada-theme-vscode-extension/raw/HEAD/images/command-palette.png"><img src="./images/command-palette.png" alt="The Command Palette in Armada Dark"></a></td>
+    <td><a href="https://github.com/DavidSeptimus/armada-theme-vscode-extension/raw/HEAD/images/command-palette-light.png"><img src="./images/command-palette-light.png" alt="The Command Palette in Armada Light"></a></td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/DavidSeptimus/armada-theme-vscode-extension/raw/HEAD/images/settings.png"><img src="./images/settings.png" alt="The Settings editor in Armada Dark"></a></td>
+    <td><a href="https://github.com/DavidSeptimus/armada-theme-vscode-extension/raw/HEAD/images/settings-light.png"><img src="./images/settings-light.png" alt="The Settings editor in Armada Light"></a></td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/DavidSeptimus/armada-theme-vscode-extension/raw/HEAD/images/git-history.png"><img src="./images/git-history.png" alt="The Source Control graph with branches and merges in Armada Dark"></a></td>
+    <td><a href="https://github.com/DavidSeptimus/armada-theme-vscode-extension/raw/HEAD/images/git-history-light.png"><img src="./images/git-history-light.png" alt="The Source Control graph with branches and merges in Armada Light"></a></td>
   </tr>
 </table>
+
+An agent session in the Chat view, in Armada Dark:
+
+<a href="https://github.com/DavidSeptimus/armada-theme-vscode-extension/raw/HEAD/images/chat.png"><img src="./images/chat.png" alt="An agent session in the Chat view in Armada Dark" width="50%"></a>
 
 ### Islands-style tabs
 
@@ -49,7 +85,7 @@ Both themes turn semantic highlighting on, so languages are colored from what th
 
 ### Optional custom CSS
 
-VS Code's theme colors can't express two parts of the Islands look, so [custom.css](./custom.css) adds them for anyone who already uses an extension that loads custom CSS into VS Code, such as [Custom CSS and JS Loader](https://marketplace.visualstudio.com/items?itemName=be5invis.vscode-custom-css). It applies only while Armada or Armada Light is the active theme, and draws both the same way, each in its own colors.
+VS Code's theme colors can't express two parts of the Islands look, so [custom.css](./custom.css) adds them for anyone who already uses an extension that loads custom CSS into VS Code, such as [Custom CSS and JS Loader](https://marketplace.visualstudio.com/items?itemName=be5invis.vscode-custom-css). It applies only while Armada Dark or Armada Light is the active theme, and draws both the same way, each in its own colors.
 
 - **Rounded side bar.** Armada's activity bar sits on the window's shell, as the tool window stripe does in JetBrains IDEs. VS Code rounds the activity bar's outer corners and leaves the side bar's square beside it, so the side bar looks cut off. The CSS rounds the side bar's outer corners.
 - **Outlined tabs.** Armada fills the selected tab, but VS Code has no color for an outline on the selected tab only. The CSS outlines the selected editor tab, the selected tab of the panel, side bars, Settings editor and chat model picker, and the selected choice of a chat question. Tabs are blue where the focus is and grey elsewhere.
