@@ -2,7 +2,7 @@
 
 Armada is a dark theme inspired by the dark themes of JetBrains Fleet and Air, both now deprecated. It is optimized for VS Code's modern UI, which it colors after the Islands look of the [Armada theme for JetBrains IDEs](https://plugins.jetbrains.com/plugin/26844-armada-theme).
 
-Armada Light is its light counterpart, colored after Armada Light for JetBrains IDEs. Both themes come with the extension: pick **Armada** or **Armada Light** with **Preferences: Color Theme**.
+Armada Light is its light counterpart, colored after Armada Light for JetBrains IDEs. Both themes come with the extension: pick **Armada Dark** or **Armada Light** with **Preferences: Color Theme**.
 
 
 ### Screenshots

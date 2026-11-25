@@ -778,7 +778,7 @@
 		{
 			"scope": "variable.other.constant.go",
 			"settings": {
-				"foreground": "#871094",
+				"foreground": "#A31D8D",
 				"fontStyle": ""
 			}
 		},
@@ -868,13 +868,18 @@
 			}
 		},
 		{
-			"name": "Java fields and enum constants",
-			"scope": [
-				"variable.other.object.property.java",
-				"constant.other.enum.java"
-			],
+			"name": "Java field references",
+			"scope": "variable.other.object.property.java",
 			"settings": {
 				"foreground": "#A31D8D"
+			}
+		},
+		{
+			"name": "Java enum constants",
+			"scope": "constant.other.enum.java",
+			"settings": {
+				"foreground": "#A31D8D",
+				"fontStyle": "italic"
 			}
 		},
 		{
@@ -905,7 +910,7 @@
 			"name": "Java annotation attribute names",
 			"scope": "constant.other.key.java",
 			"settings": {
-				"foreground": "#A31D8D"
+				"foreground": "#616605"
 			}
 		},
 		{
@@ -1498,7 +1503,7 @@
 		{
 			"scope": "variable.other.readwrite.global.pre-defined.ruby",
 			"settings": {
-				"foreground": "#086E14"
+				"foreground": "#090909"
 			}
 		},
 		{
@@ -1574,17 +1579,53 @@
 				"entity.name.function.call.kotlin",
 				"entity.name.function.call.shell",
 				"entity.name.function.ts",
-				"entity.name.function.tsx"
+				"entity.name.function.tsx",
+				"entity.name.function.js"
 			],
 			"settings": {
 				"foreground": "#5511BF"
 			}
 		},
 		{
+			"name": "JavaScript and TypeScript function declarations",
+			"scope": [
+				"meta.definition.function.js entity.name.function.js",
+				"meta.definition.function.ts entity.name.function.ts",
+				"meta.definition.function.tsx entity.name.function.tsx",
+				"meta.definition.variable.js entity.name.function.js",
+				"meta.definition.variable.ts entity.name.function.ts",
+				"meta.definition.variable.tsx entity.name.function.tsx"
+			],
+			"settings": {
+				"foreground": "#5511BF",
+				"fontStyle": "bold"
+			}
+		},
+		{
 			"scope": [
 				"entity.name.function.go",
-				"entity.name.function.java"
+				"entity.name.function.java",
+				"entity.name.function.ruby"
 			],
+			"settings": {
+				"foreground": "#090909",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "Java calls",
+			"scope": [
+				"meta.function-call.java > entity.name.function.java",
+				"meta.method-call.java > entity.name.function.java"
+			],
+			"settings": {
+				"foreground": "#5511BF",
+				"fontStyle": ""
+			}
+		},
+		{
+			"name": "Python special method declarations",
+			"scope": "meta.function.python > support.function.magic.python",
 			"settings": {
 				"foreground": "#090909",
 				"fontStyle": "bold"
@@ -1594,13 +1635,6 @@
 			"scope": "entity.name.function.support.builtin.go",
 			"settings": {
 				"foreground": "#14646E"
-			}
-		},
-		{
-			"scope": "entity.name.function.js",
-			"settings": {
-				"foreground": "#5511BF",
-				"fontStyle": "bold"
 			}
 		},
 		{
@@ -1633,10 +1667,8 @@
 		},
 		{
 			"scope": [
-				"variable.other.class.js",
 				"variable.object.property.ts",
-				"meta.definition.variable.ts variable.other.readwrite.ts",
-				"meta.definition.variable.js variable.other.readwrite.js",
+				"variable.object.property.js",
 				"variable.object.property",
 				"variable.other.enummember"
 			],
@@ -1647,7 +1679,10 @@
 		{
 			"scope": [
 				"variable.other.class.ts",
-				"variable.other.property"
+				"variable.other.class.js",
+				"variable.other.property",
+				"meta.definition.variable.ts variable.other.readwrite.ts",
+				"meta.definition.variable.js variable.other.readwrite.js"
 			],
 			"settings": {
 				"foreground": "#090909"
@@ -1655,18 +1690,18 @@
 		},
 		{
 			"scope": [
+				"variable.other.constant.ts",
+				"variable.other.constant.tsx",
+				"variable.other.constant.js",
+				"variable.other.constant.object.ts",
+				"variable.other.constant.object.tsx",
+				"variable.other.constant.object.js",
 				"meta.definition.variable.ts variable.other.constant.ts",
 				"meta.definition.variable.js variable.other.constant.js"
 			],
 			"settings": {
-				"foreground": "#A31D8D",
+				"foreground": "#090909",
 				"fontStyle": ""
-			}
-		},
-		{
-			"scope": "variable.object.property.js",
-			"settings": {
-				"foreground": "#A31D8D"
 			}
 		},
 		{
@@ -1676,9 +1711,23 @@
 			}
 		},
 		{
-			"scope": "variable.other.class.php",
+			"name": "PHP constants",
+			"scope": [
+				"constant.other.class.php",
+				"meta.class.body.php constant.other.php",
+				"meta.enum.body.php constant.other.php",
+				"meta.interface.body.php constant.other.php",
+				"meta.trait.body.php constant.other.php"
+			],
 			"settings": {
 				"foreground": "#A31D8D"
+			}
+		},
+		{
+			"scope": "variable.other.class.php",
+			"settings": {
+				"foreground": "#A31D8D",
+				"fontStyle": "italic"
 			}
 		},
 		{
@@ -2083,10 +2132,13 @@
 			}
 		},
 		{
-			"scope": [
-				"punctuation.definition.quote.begin.markdown",
-				"punctuation.definition.raw.markdown"
-			],
+			"scope": "punctuation.definition.quote.begin.markdown",
+			"settings": {
+				"foreground": "#14646E"
+			}
+		},
+		{
+			"scope": "punctuation.definition.raw.markdown",
 			"settings": {
 				"foreground": "#086E14"
 			}
@@ -2534,13 +2586,13 @@
 		{
 			"scope": "token.warn-token",
 			"settings": {
-				"foreground": "#916012"
+				"foreground": "#D73251"
 			}
 		},
 		{
 			"scope": "token.error-token",
 			"settings": {
-				"foreground": "#C72C49",
+				"foreground": "#086E14",
 				"fontStyle": "bold"
 			}
 		},
@@ -2650,7 +2702,7 @@
 			"name": "Go Package",
 			"scope": "entity.name.type.package.go",
 			"settings": {
-				"foreground": "#5D463C"
+				"foreground": "#664229"
 			}
 		},
 		{
@@ -2939,7 +2991,7 @@
 			"name": "YAML Anchor (2 of 2)",
 			"scope": "entity.name.type.anchor.yaml",
 			"settings": {
-				"foreground": "#1749BD"
+				"foreground": "#BF4A02"
 			}
 		},
 		{
@@ -2953,7 +3005,7 @@
 			"name": "YAML Alias (2 of 2)",
 			"scope": "variable.other.alias.yaml",
 			"settings": {
-				"foreground": "#1749BD"
+				"foreground": "#BF4A02"
 			}
 		},
 		{
@@ -2992,9 +3044,13 @@
 		},
 		{
 			"name": "YAML Value (2 of 2)",
-			"scope": "string.quoted.single.yaml",
+			"scope": [
+				"string.quoted.single.yaml",
+				"string.quoted.single.yaml punctuation.definition.string.begin.yaml",
+				"string.quoted.single.yaml punctuation.definition.string.end.yaml"
+			],
 			"settings": {
-				"foreground": "#086E14"
+				"foreground": "#5511BF"
 			}
 		},
 		{
@@ -3184,7 +3240,7 @@
 		{
 			"scope": "meta.tag.metadata.doctype.html entity.name.tag.html",
 			"settings": {
-				"foreground": "#B0B0B0"
+				"foreground": "#1749BD"
 			}
 		},
 		{
@@ -3267,13 +3323,13 @@
 		{
 			"scope": "log.warning",
 			"settings": {
-				"foreground": "#916012"
+				"foreground": "#D73251"
 			}
 		},
 		{
 			"scope": "log.error",
 			"settings": {
-				"foreground": "#C72C49",
+				"foreground": "#086E14",
 				"fontStyle": "bold"
 			}
 		},
@@ -3771,17 +3827,7 @@
 			"bold": true,
 			"italic": false
 		},
-		"method.declaration:typescript": {
-			"foreground": "#5511BF",
-			"bold": true,
-			"italic": false
-		},
 		"function.declaration:typescriptreact": {
-			"foreground": "#5511BF",
-			"bold": true,
-			"italic": false
-		},
-		"method.declaration:typescriptreact": {
 			"foreground": "#5511BF",
 			"bold": true,
 			"italic": false
@@ -3791,20 +3837,70 @@
 			"bold": true,
 			"italic": false
 		},
-		"method.declaration:javascript": {
-			"foreground": "#5511BF",
-			"bold": true,
-			"italic": false
-		},
 		"function.declaration:javascriptreact": {
 			"foreground": "#5511BF",
 			"bold": true,
 			"italic": false
 		},
+		"method.declaration:typescript": {
+			"foreground": "#5511BF",
+			"bold": false,
+			"italic": false
+		},
+		"method.declaration:typescriptreact": {
+			"foreground": "#5511BF",
+			"bold": false,
+			"italic": false
+		},
+		"method.declaration:javascript": {
+			"foreground": "#5511BF",
+			"bold": false,
+			"italic": false
+		},
 		"method.declaration:javascriptreact": {
 			"foreground": "#5511BF",
-			"bold": true,
+			"bold": false,
 			"italic": false
+		},
+		"method.static:typescript": {
+			"foreground": "#5511BF",
+			"bold": false,
+			"italic": true
+		},
+		"method.static:typescriptreact": {
+			"foreground": "#5511BF",
+			"bold": false,
+			"italic": true
+		},
+		"method.static:javascript": {
+			"foreground": "#5511BF",
+			"bold": false,
+			"italic": true
+		},
+		"method.static:javascriptreact": {
+			"foreground": "#5511BF",
+			"bold": false,
+			"italic": true
+		},
+		"method.declaration.static:typescript": {
+			"foreground": "#5511BF",
+			"bold": false,
+			"italic": true
+		},
+		"method.declaration.static:typescriptreact": {
+			"foreground": "#5511BF",
+			"bold": false,
+			"italic": true
+		},
+		"method.declaration.static:javascript": {
+			"foreground": "#5511BF",
+			"bold": false,
+			"italic": true
+		},
+		"method.declaration.static:javascriptreact": {
+			"foreground": "#5511BF",
+			"bold": false,
+			"italic": true
 		},
 		"parameter:typescript": {
 			"foreground": "#616605",
@@ -3823,26 +3919,6 @@
 		},
 		"parameter:javascriptreact": {
 			"foreground": "#616605",
-			"bold": false,
-			"italic": false
-		},
-		"variable.declaration:typescript": {
-			"foreground": "#A31D8D",
-			"bold": false,
-			"italic": false
-		},
-		"variable.declaration:typescriptreact": {
-			"foreground": "#A31D8D",
-			"bold": false,
-			"italic": false
-		},
-		"variable.declaration:javascript": {
-			"foreground": "#A31D8D",
-			"bold": false,
-			"italic": false
-		},
-		"variable.declaration:javascriptreact": {
-			"foreground": "#A31D8D",
 			"bold": false,
 			"italic": false
 		},
@@ -3885,6 +3961,26 @@
 			"foreground": "#A31D8D",
 			"bold": false,
 			"italic": false
+		},
+		"property.declaration.static:typescript": {
+			"foreground": "#A31D8D",
+			"bold": false,
+			"italic": true
+		},
+		"property.declaration.static:typescriptreact": {
+			"foreground": "#A31D8D",
+			"bold": false,
+			"italic": true
+		},
+		"property.declaration.static:javascript": {
+			"foreground": "#A31D8D",
+			"bold": false,
+			"italic": true
+		},
+		"property.declaration.static:javascriptreact": {
+			"foreground": "#A31D8D",
+			"bold": false,
+			"italic": true
 		},
 		"enumMember:typescript": {
 			"foreground": "#A31D8D",
@@ -3946,18 +4042,8 @@
 			"bold": false,
 			"italic": false
 		},
-		"property.static:java": {
-			"foreground": "#A31D8D",
-			"bold": false,
-			"italic": false
-		},
-		"enumMember:java": {
-			"foreground": "#A31D8D",
-			"bold": false,
-			"italic": false
-		},
 		"annotationMember:java": {
-			"foreground": "#A31D8D",
+			"foreground": "#616605",
 			"bold": false,
 			"italic": false
 		},
@@ -3977,12 +4063,17 @@
 			"italic": false
 		},
 		"namespace:go": {
-			"foreground": "#5D463C",
+			"foreground": "#664229",
 			"bold": false,
 			"italic": false
 		},
 		"variable.readonly:go": {
-			"foreground": "#871094",
+			"foreground": "#A31D8D",
+			"bold": false,
+			"italic": false
+		},
+		"variable.readonly.defaultLibrary:go": {
+			"foreground": "#14646E",
 			"bold": false,
 			"italic": false
 		},

@@ -7,6 +7,10 @@
 - Armada Light, a light theme colored after Armada Light for JetBrains IDEs, with the same workbench and language coverage as Armada
 - `custom.css` rounds the side bar and outlines the selected tabs in Armada Light too, in its colors
 
+### Changed
+
+- The dark theme is listed as Armada Dark in the theme picker. Its name in settings such as `workbench.colorTheme` is still `Armada`, so existing settings keep working
+
 ### Fixed
 
 - A folder that files are dragged onto is highlighted like a selected row; it had no highlight before
