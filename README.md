@@ -49,8 +49,8 @@ With the [optional custom CSS](#optional-custom-css), which rounds the side bar 
     <td><a href="https://github.com/DavidSeptimus/armada-theme-vscode-extension/raw/HEAD/images/diff-light.png"><img src="./images/diff-light.png" alt="A diff of a modified file in Armada Light"></a></td>
   </tr>
   <tr>
-    <td><a href="https://github.com/DavidSeptimus/armada-theme-vscode-extension/raw/HEAD/images/command-palette.png"><img src="./images/command-palette.png" alt="The Command Palette in Armada Dark"></a></td>
-    <td><a href="https://github.com/DavidSeptimus/armada-theme-vscode-extension/raw/HEAD/images/command-palette-light.png"><img src="./images/command-palette-light.png" alt="The Command Palette in Armada Light"></a></td>
+    <td><a href="https://github.com/DavidSeptimus/armada-theme-vscode-extension/raw/HEAD/images/theme-picker.png"><img src="./images/theme-picker.png" alt="The color theme picker with Armada Dark highlighted"></a></td>
+    <td><a href="https://github.com/DavidSeptimus/armada-theme-vscode-extension/raw/HEAD/images/theme-picker-light.png"><img src="./images/theme-picker-light.png" alt="The color theme picker with Armada Light highlighted"></a></td>
   </tr>
   <tr>
     <td><a href="https://github.com/DavidSeptimus/armada-theme-vscode-extension/raw/HEAD/images/settings.png"><img src="./images/settings.png" alt="The Settings editor in Armada Dark"></a></td>
