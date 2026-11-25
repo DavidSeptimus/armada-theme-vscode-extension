@@ -9,7 +9,7 @@
 
 ### Changed
 
-- The dark theme is listed as Armada Dark in the theme picker. Settings that name it `Armada` keep working
+- The dark theme is listed as Armada Dark in the theme picker. Its name in settings such as `workbench.colorTheme` is still `Armada`, so existing settings keep working
 
 ### Fixed
 
