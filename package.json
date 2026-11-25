@@ -28,6 +28,7 @@
         "path": "./themes/Armada-color-theme.json"
       },
       {
+        "id": "Armada Light",
         "label": "Armada Light",
         "uiTheme": "vs",
         "path": "./themes/Armada-Light-color-theme.json"
