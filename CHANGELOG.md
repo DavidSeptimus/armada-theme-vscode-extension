@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## 2.3.0 - 2026-11-25
+
 ### Added
 
 - Armada Light, a light theme colored after Armada Light for JetBrains IDEs, with the same workbench and language coverage as Armada
