@@ -2,7 +2,7 @@
   "name": "armada-theme",
   "displayName": "Armada Theme",
   "description": "Dark and light color themes inspired by the themes of JetBrains Fleet and Air, optimized for VS Code's modern UI.",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "engines": {
     "vscode": "^1.104.0"
   },
