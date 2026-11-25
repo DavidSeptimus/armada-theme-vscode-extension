@@ -12,6 +12,7 @@
 ### Changed
 
 - The dark theme is listed as Armada Dark in the theme picker. Its name in settings such as `workbench.colorTheme` is still `Armada`, so existing settings keep working
+- The README shows Armada Light screenshots beside the dark ones and says how to pick each theme
 
 ### Fixed
 
