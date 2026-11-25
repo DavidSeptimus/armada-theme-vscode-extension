@@ -22,7 +22,8 @@
   "contributes": {
     "themes": [
       {
-        "label": "Armada",
+        "id": "Armada",
+        "label": "Armada Dark",
         "uiTheme": "vs-dark",
         "path": "./themes/Armada-color-theme.json"
       },
